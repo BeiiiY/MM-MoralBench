@@ -14,7 +14,7 @@ An overview of the entire pipeline for the construction of M³oralBench is as fo
 
 #### Data
 
-You can download the images from this [LINK](https://1drv.ms/u/c/3990e975c588b26f/EYe5aG7eOhhIq4rUxdErgyoBQy07Q5xtSf0QLF6w2unf7g?e=A4gUbH). 
+You can download the images from this [LINK](https://1drv.ms/u/c/3990e975c588b26f/EYe5aG7eOhhIq4rUxdErgyoBHZBH6kBeKa-q0gRzMMq7Rg). 
 
 Our evaluation data is saved in `query.json`, with the following format:
 
