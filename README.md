@@ -1,10 +1,10 @@
-# M³oralBench: A MultiModal Moral Benchmark for LVLMs
+# MM-MoralBench: A MultiModal Moral Evaluation Benchmark for Large Vision-Language Models
 
 ***Abstract -*** Recently, large foundation models, including large language models (LLMs) and large vision-language models (LVLMs), have become essential tools in critical fields such as law, finance, and healthcare. As these models increasingly integrate into our daily life, it is necessary to conduct moral evaluation to ensure that their outputs align with human values and remain within moral boundaries. Previous works primarily focus on LLMs, proposing moral datasets and benchmarks limited to text modality. However, given the rapid development of LVLMs, there is still a lack of multimodal moral evaluation methods. To bridge this gap, we introduce M³oralBench, the first MultiModal Moral Benchmark for LVLMs, to our knowledge. M³oralBench expands the everyday moral scenarios in Moral Foundations Vignettes (MFVs) and employs the text-to-image diffusion model, SD3.0, to create corresponding scenario images. It conducts moral evaluation across six moral foundations of Moral Foundations Theory (MFT) and encompasses tasks in moral judgement, moral classification, and moral response, providing a comprehensive assessment of model performance in multimodal moral understanding and reasoning. Extensive experiments on 10 popular open-source and closed-source LVLMs demonstrate that M³oralBench is a challenging benchmark, exposing notable moral limitations in current models.
 
 #### Overview
 
-**M³oralBench** is a multimodal moral benchmark for LVLMs built on Moral Foundations Vignettes. It is designed to evaluate models' understanding and reasoning abilities regarding various multimodal moral scenarios, highlighting their limitations. The benchmark consists of three moral tasks, with scenario images covering six moral foundations.
+**MM-MoralBench** is a multimodal moral benchmark for LVLMs built on Moral Foundations Vignettes. It is designed to evaluate models' understanding and reasoning abilities regarding various multimodal moral scenarios, highlighting their limitations. The benchmark consists of three moral tasks, with scenario images covering six moral foundations.
 
 An overview of the entire pipeline for the construction of M³oralBench is as follows:
 
@@ -32,7 +32,7 @@ Our evaluation data is saved in `query.json`, with the following format:
 ]
 ```
 
-where `id` refers to the data id in M³oralBench, `image` refers to the image path, `instruction` refers to the instruction, `type` refers to the moral task type, `gt_choice` refers to the ground truth answer, `Foundation` refers to the moral foundation type.
+where `id` refers to the data id in MM-MoralBench, `image` refers to the image path, `instruction` refers to the instruction, `type` refers to the moral task type, `gt_choice` refers to the ground truth answer, `Foundation` refers to the moral foundation type.
 
 #### Leaderboard
 
