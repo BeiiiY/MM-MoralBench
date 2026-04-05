@@ -1,15 +1,16 @@
 # MM-MoralBench: A MultiModal Moral Evaluation Benchmark for Large Vision-Language Models
 
-***Abstract -*** Recently, large foundation models, including large language models (LLMs) and large vision-language models (LVLMs), have become essential tools in critical fields such as law, finance, and healthcare. As these models increasingly integrate into our daily life, it is necessary to conduct moral evaluation to ensure that their outputs align with human values and remain within moral boundaries. Previous works primarily focus on LLMs, proposing moral datasets and benchmarks limited to text modality. However, given the rapid development of LVLMs, there is still a lack of multimodal moral evaluation methods. To bridge this gap, we introduce M³oralBench, the first MultiModal Moral Benchmark for LVLMs, to our knowledge. M³oralBench expands the everyday moral scenarios in Moral Foundations Vignettes (MFVs) and employs the text-to-image diffusion model, SD3.0, to create corresponding scenario images. It conducts moral evaluation across six moral foundations of Moral Foundations Theory (MFT) and encompasses tasks in moral judgement, moral classification, and moral response, providing a comprehensive assessment of model performance in multimodal moral understanding and reasoning. Extensive experiments on 10 popular open-source and closed-source LVLMs demonstrate that M³oralBench is a challenging benchmark, exposing notable moral limitations in current models.
+***Abstract -*** The rapid integration of Large Vision-Language Models (LVLMs) into critical domains necessitates comprehensive moral evaluation to ensure their alignment with human values. While extensive research has addressed moral evaluation in LLMs, text-centric assessments cannot adequately capture the complex contextual nuances and ambiguities introduced by visual modalities. To bridge this gap, we introduce MM-MoralBench, a multimodal moral evaluation benchmark grounded in Moral Foundations Theory. We construct unique multimodal scenarios by combining synthesized visual contexts with character dialogues to simulate real-world dilemmas where visual and linguistic information interact dynamically. Our benchmark assesses models across six moral foundations through moral judgment, classification, and response tasks.
+Extensive evaluations of over 20 LVLMs reveal that models exhibit pronounced moral alignment bias, diverging significantly from human consensus. Furthermore, our analysis indicates that general scaling or structural improvements yield diminishing returns in moral alignment, and thinking paradigm may trigger overthinking-induced failures in moral contexts, highlighting the necessity for targeted moral alignment strategies.
 
 #### Overview
 
 **MM-MoralBench** is a multimodal moral benchmark for LVLMs built on Moral Foundations Vignettes. It is designed to evaluate models' understanding and reasoning abilities regarding various multimodal moral scenarios, highlighting their limitations. The benchmark consists of three moral tasks, with scenario images covering six moral foundations.
 
-An overview of the entire pipeline for the construction of M³oralBench is as follows:
+An overview of the entire pipeline for the construction of MM-MoralBench is as follows:
 
 <p align="center">
-    <img src="https://github.com/BeiiiY/M3oralBench/blob/main/Figures/pipeline.jpg" width="800" />
+    <img src="https://github.com/BeiiiY/MM-MoralBench/blob/main/Figures/pipeline.jpg" width="800" />
 </p>
 
 #### Data
@@ -37,25 +38,17 @@ where `id` refers to the data id in MM-MoralBench, `image` refers to the image p
 #### Leaderboard
 
 <p align="center">
-    <img src="https://github.com/BeiiiY/M3oralBench/blob/main/Figures/leaderboard.png" width="800" />
+    <img src="https://github.com/BeiiiY/MM-MoralBench/blob/main/Figures/leaderboard.png" width="800" />
 </p>
 
 <p align="center">
-    <img src="https://github.com/BeiiiY/M3oralBench/blob/main/Figures/rada.jpg" width="800" />
+    <img src="https://github.com/BeiiiY/MM-MoralBench/blob/main/Figures/rada.jpg" width="800" />
 </p>
 
 #### Examples
 
 <p align="center">
-    <img src="https://github.com/BeiiiY/M3oralBench/blob/main/Figures/example1.jpg" width="800" />
-</p>
-
-<p align="center">
-    <img src="https://github.com/BeiiiY/M3oralBench/blob/main/Figures/example2.jpg" width="800" />
-</p>
-
-<p align="center">
-    <img src="https://github.com/BeiiiY/M3oralBench/blob/main/Figures/example3.jpg" width="800" />
+    <img src="https://github.com/BeiiiY/MM-MoralBench/blob/main/Figures/example.jpg" width="800" />
 </p>
 
 #### Related Projects & Papers
